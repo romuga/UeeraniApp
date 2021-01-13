@@ -1,0 +1,24 @@
+PODS:
+  - CLTypingLabel (0.4.0)
+  - GIFImageView (0.1.0)
+  - SwiftyGif (5.3.0)
+
+DEPENDENCIES:
+  - CLTypingLabel
+  - GIFImageView
+  - SwiftyGif
+
+SPEC REPOS:
+  trunk:
+    - CLTypingLabel
+    - GIFImageView
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  CLTypingLabel: 95a7d1faf7e3d1d952cd11cb0491d17d80c50934
+  GIFImageView: cd6a500b9bac1942cb66b73452b97baa6e75280d
+  SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
+
+PODFILE CHECKSUM: 6c19eab39a1176414444ba04fb3d3514e35991bd
+
+COCOAPODS: 1.10.0

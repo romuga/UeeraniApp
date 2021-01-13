@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-UeeraniApp/Pods-UeeraniApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CLTypingLabel/CLTypingLabel.framework
+${BUILT_PRODUCTS_DIR}/GIFImageView/GIFImageView.framework
+${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework
