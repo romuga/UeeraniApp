@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Los pueblos magicos de michoacan, blah blh alhjshdjh ásghaj sduag s uahsdj ajsd j" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-LS-xEb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Los pueblos magicos de michoacan,son bonitos y están llenos de color, debes visitarlos para enamorarte de ellos." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-LS-xEb">
                                 <rect key="frame" x="87" y="195" width="240" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,6 +29,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="9dQ-F3-VhW"/>
+                    <connections>
+                        <outlet property="speechText" destination="bmi-LS-xEb" id="1AO-tn-x9Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
