@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		91A81F9125AEA1EC00FC6217 /* UeeraniApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91A81F8F25AEA1EC00FC6217 /* UeeraniApp.xcdatamodeld */; };
 		91A81F9325AEA1EF00FC6217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A81F9225AEA1EF00FC6217 /* Assets.xcassets */; };
 		91A81F9625AEA1EF00FC6217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A81F9425AEA1EF00FC6217 /* LaunchScreen.storyboard */; };
+		91F71B9425B14B3800E4E6CF /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F71B9325B14B3700E4E6CF /* RegistroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		91A81F9225AEA1EF00FC6217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91A81F9525AEA1EF00FC6217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91A81F9725AEA1EF00FC6217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F71B9325B14B3700E4E6CF /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		AF98A9393A6DF61653C71BCA /* Pods_UeeraniApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UeeraniApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,7 +60,6 @@
 				8B5D7FD4A5CE64BA8719D8CD /* Pods-UeeraniApp.debug.xcconfig */,
 				565C989D943E3DA8E66B96F6 /* Pods-UeeraniApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 				91A81F9425AEA1EF00FC6217 /* LaunchScreen.storyboard */,
 				91A81F9725AEA1EF00FC6217 /* Info.plist */,
 				91A81F8F25AEA1EC00FC6217 /* UeeraniApp.xcdatamodeld */,
+				91F71B9325B14B3700E4E6CF /* RegistroViewController.swift */,
 			);
 			path = UeeraniApp;
 			sourceTree = "<group>";
@@ -212,6 +214,7 @@
 				91A81F8B25AEA1EC00FC6217 /* ViewController.swift in Sources */,
 				91A81F9125AEA1EC00FC6217 /* UeeraniApp.xcdatamodeld in Sources */,
 				91A81F8725AEA1EC00FC6217 /* AppDelegate.swift in Sources */,
+				91F71B9425B14B3800E4E6CF /* RegistroViewController.swift in Sources */,
 				91A81F8925AEA1EC00FC6217 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
