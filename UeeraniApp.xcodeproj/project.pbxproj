@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4C4BE82943F224C458C9F347 /* Pods_UeeraniApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF98A9393A6DF61653C71BCA /* Pods_UeeraniApp.framework */; };
+		91A492A725B3D9E70034FBF0 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A492A625B3D9E70034FBF0 /* PerfilViewController.swift */; };
+		91A492AA25B3DBDB0034FBF0 /* InfoPuebloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A492A925B3DBDB0034FBF0 /* InfoPuebloViewController.swift */; };
+		91A492AD25B3DBF60034FBF0 /* GaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A492AC25B3DBF60034FBF0 /* GaleriaViewController.swift */; };
+		91A492B025B3DE250034FBF0 /* BienvenidaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A492AF25B3DE250034FBF0 /* BienvenidaViewController.swift */; };
 		91A81F8725AEA1EC00FC6217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A81F8625AEA1EC00FC6217 /* AppDelegate.swift */; };
 		91A81F8925AEA1EC00FC6217 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A81F8825AEA1EC00FC6217 /* SceneDelegate.swift */; };
 		91A81F8B25AEA1EC00FC6217 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A81F8A25AEA1EC00FC6217 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		565C989D943E3DA8E66B96F6 /* Pods-UeeraniApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UeeraniApp.release.xcconfig"; path = "Target Support Files/Pods-UeeraniApp/Pods-UeeraniApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B5D7FD4A5CE64BA8719D8CD /* Pods-UeeraniApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UeeraniApp.debug.xcconfig"; path = "Target Support Files/Pods-UeeraniApp/Pods-UeeraniApp.debug.xcconfig"; sourceTree = "<group>"; };
+		91A492A625B3D9E70034FBF0 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		91A492A925B3DBDB0034FBF0 /* InfoPuebloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPuebloViewController.swift; sourceTree = "<group>"; };
+		91A492AC25B3DBF60034FBF0 /* GaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaViewController.swift; sourceTree = "<group>"; };
+		91A492AF25B3DE250034FBF0 /* BienvenidaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BienvenidaViewController.swift; sourceTree = "<group>"; };
 		91A81F8325AEA1EC00FC6217 /* UeeraniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UeeraniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A81F8625AEA1EC00FC6217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91A81F8825AEA1EC00FC6217 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 				91A81F9725AEA1EF00FC6217 /* Info.plist */,
 				91A81F8F25AEA1EC00FC6217 /* UeeraniApp.xcdatamodeld */,
 				91F71B9325B14B3700E4E6CF /* RegistroViewController.swift */,
+				91A492A625B3D9E70034FBF0 /* PerfilViewController.swift */,
+				91A492A925B3DBDB0034FBF0 /* InfoPuebloViewController.swift */,
+				91A492AC25B3DBF60034FBF0 /* GaleriaViewController.swift */,
+				91A492AF25B3DE250034FBF0 /* BienvenidaViewController.swift */,
 			);
 			path = UeeraniApp;
 			sourceTree = "<group>";
@@ -211,9 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A492A725B3D9E70034FBF0 /* PerfilViewController.swift in Sources */,
+				91A492B025B3DE250034FBF0 /* BienvenidaViewController.swift in Sources */,
 				91A81F8B25AEA1EC00FC6217 /* ViewController.swift in Sources */,
+				91A492AD25B3DBF60034FBF0 /* GaleriaViewController.swift in Sources */,
 				91A81F9125AEA1EC00FC6217 /* UeeraniApp.xcdatamodeld in Sources */,
 				91A81F8725AEA1EC00FC6217 /* AppDelegate.swift in Sources */,
+				91A492AA25B3DBDB0034FBF0 /* InfoPuebloViewController.swift in Sources */,
 				91F71B9425B14B3800E4E6CF /* RegistroViewController.swift in Sources */,
 				91A81F8925AEA1EC00FC6217 /* SceneDelegate.swift in Sources */,
 			);

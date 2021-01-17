@@ -10,6 +10,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var usuario: UITextField!
+    @IBOutlet weak var contraseña: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,6 +23,8 @@ class ViewController: UIViewController {
         synthesizer.speak(utterance)*/
     }
 
-
+    @IBAction func login(_ sender: UIButton) {
+    }
+    
 }
 
