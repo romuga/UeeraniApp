@@ -73,7 +73,7 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsu-Zl-FF0"/>
-                                    <segue destination="Ond-rj-gng" kind="show" id="erU-bY-cxq"/>
+                                    <segue destination="Ond-rj-gng" kind="show" identifier="bienvenida" id="erU-bY-cxq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -154,7 +154,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="54u-PV-LZ0" kind="show" id="PXI-hH-hx4"/>
+                                    <segue destination="54u-PV-LZ0" kind="show" identifier="pueblo" id="PXI-hH-hx4"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6MU-gX-sG2">
@@ -332,7 +332,7 @@
                                 </state>
                                 <connections>
                                     <action selector="register:" destination="K2q-iJ-zP7" eventType="touchUpInside" id="WAj-Je-ig3"/>
-                                    <segue destination="Ond-rj-gng" kind="show" id="mZd-7r-E0j"/>
+                                    <segue destination="Ond-rj-gng" kind="show" identifier="bienvenida" id="mZd-7r-E0j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -601,6 +601,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="nA7-Ca-7Z2"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kvf-mv-D6E">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -612,7 +613,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erO-QK-1LC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.9710144927537" y="60.9375"/>
+            <point key="canvasLocation" x="1616" y="61"/>
         </scene>
         <!--Item-->
         <scene sceneID="WiQ-ih-BBH">
@@ -622,6 +623,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Q3t-vI-kfh"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fXI-Wj-Yz3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

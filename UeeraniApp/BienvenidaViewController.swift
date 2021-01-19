@@ -10,6 +10,7 @@ import UIKit
 class BienvenidaViewController: UIViewController {
 
     @IBOutlet weak var nombreUserLabel: UILabel!
+    var nUsuario : String?
     override func viewDidLoad() {
         super.viewDidLoad()
 

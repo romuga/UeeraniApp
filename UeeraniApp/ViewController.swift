@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AVFoundation
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -14,17 +14,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var contraseña: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        /*let utterance = AVSpeechUtterance(string: speechText.text!)
-        utterance.voice = AVSpeechSynthesisVoice(language: "es-mx")
-        utterance.rate = 0.5
-
-        let synthesizer = AVSpeechSynthesizer()
-        synthesizer.speak(utterance)*/
+        
     }
 
     @IBAction func login(_ sender: UIButton) {
+        if let email = usuario.text, let pass = contraseña.text{
+            Auth.auth().signIn(withEmail: email, password: pass){
+                (result, error) in
+                
+                if let result = result, error == nil{
+                    //self.navigationController?.pushViewController(InicioViewController(email: result.user.email!, provider: .basic), animated: true)
+                    self.performSegue(withIdentifier: "bienvenida", sender: BienvenidaViewController.self)
+                }else{
+                    let alert = UIAlertController(title: "Error", message: "Usuario y/o contraseña incorrectos", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+    }
     }
     
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "bienvenida"{
+                let user = usuario.text!
+                let usuario = segue.destination as! BienvenidaViewController
+                usuario.nUsuario = user
+                //usuario.pass = contraText.text!
+               
+            }
+        }
 }
 
