@@ -13,9 +13,13 @@ class BienvenidaViewController: UIViewController {
     var nUsuario : String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        nUsuario = "MArio"
 
     }
     
+    @IBAction func fromInicioView(segue:UIStoryboardSegue!){
+        
+    }
 
 
 }

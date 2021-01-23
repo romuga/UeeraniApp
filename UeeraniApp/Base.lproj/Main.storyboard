@@ -73,7 +73,7 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsu-Zl-FF0"/>
-                                    <segue destination="Ond-rj-gng" kind="show" identifier="bienvenida" id="erU-bY-cxq"/>
+                                    <segue destination="4K4-Ot-g77" kind="show" identifier="bienvenida" id="Cs4-Tj-ZnS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="718.84057971014499" y="60.9375"/>
         </scene>
-        <!--Item-->
+        <!--Bienvenido-->
         <scene sceneID="2n9-wg-c3z">
             <objects>
                 <viewController id="4K4-Ot-g77" customClass="BienvenidaViewController" customModule="UeeraniApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,24 +123,55 @@
                                 <rect key="frame" x="63" y="295" width="279" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-yc-pKw">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwT-rL-BQc">
+                                        <rect key="frame" x="43" y="28" width="68" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Inicio" image="face.smiling.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcb-a2-ZLr">
+                                        <rect key="frame" x="168" y="28" width="95" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Pueblos" image="list.bullet" catalog="system"/>
+                                        <connections>
+                                            <segue destination="0WW-Y6-RJn" kind="show" id="7ZW-YR-xQK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3q-R8-XEm">
+                                        <rect key="frame" x="306" y="28" width="65" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Perfil" image="person.fill" catalog="system"/>
+                                        <connections>
+                                            <segue destination="xEe-zy-bRF" kind="show" id="sIb-4O-GgF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.055150072830000001" green="0.6448881662" blue="0.59709700740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uMm-s5-JNT"/>
                         <color key="backgroundColor" red="1" green="0.70499079799999997" blue="0.3281545166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2Mx-LA-2Y2"/>
+                    <tabBarItem key="tabBarItem" title="Bienvenido" selectedImage="star.fill" catalog="system" id="2Mx-LA-2Y2"/>
                     <navigationItem key="navigationItem" id="p0y-Kl-X10"/>
                     <connections>
-                        <outlet property="nombreUser" destination="1cN-8d-D6X" id="D1Z-au-eyC"/>
+                        <outlet property="nombreUserLabel" destination="1cN-8d-D6X" id="HQ0-mx-ZZz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhW-Jn-qng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2309" y="61"/>
+            <point key="canvasLocation" x="1818.840579710145" y="60.9375"/>
         </scene>
-        <!--Item-->
+        <!--Pueblos-->
         <scene sceneID="qqd-38-Iht">
             <objects>
-                <viewController id="0WW-Y6-RJn" sceneMemberID="viewController">
+                <viewController id="0WW-Y6-RJn" customClass="ListPueblosViewController" customModule="UeeraniApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mqa-fF-TCc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,15 +283,49 @@
                                 <rect key="frame" x="20" y="685" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-Wd-3zu">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyE-ti-vY0">
+                                        <rect key="frame" x="43" y="28" width="68" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Inicio" image="face.smiling.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="fromInicioViewWithSegue:" destination="tRB-ab-nuT" eventType="touchUpInside" id="G7D-uX-s5D"/>
+                                            <segue destination="VkW-9u-Vix" kind="unwind" unwindAction="fromInicioViewWithSegue:" id="ZSc-BC-fYw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Soe-oi-Utr">
+                                        <rect key="frame" x="168" y="28" width="95" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Pueblos" image="list.bullet" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVp-5v-fgc">
+                                        <rect key="frame" x="306" y="28" width="65" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Perfil" image="person.fill" catalog="system"/>
+                                        <connections>
+                                            <segue destination="xEe-zy-bRF" kind="show" id="eBY-v3-gbo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.055150072830000001" green="0.6448881662" blue="0.59709700740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WVh-ue-RiX"/>
                         <color key="backgroundColor" red="1" green="0.70499079799999997" blue="0.3281545166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UDG-0o-qsj"/>
+                    <tabBarItem key="tabBarItem" title="Pueblos" selectedImage="list.star" catalog="system" id="UDG-0o-qsj"/>
+                    <navigationItem key="navigationItem" id="Tak-q5-SJc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRB-ab-nuT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VkW-9u-Vix" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3105.7971014492755" y="60.9375"/>
+            <point key="canvasLocation" x="2659" y="61"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="fer-EH-CGM">
@@ -332,7 +397,6 @@
                                 </state>
                                 <connections>
                                     <action selector="register:" destination="K2q-iJ-zP7" eventType="touchUpInside" id="WAj-Je-ig3"/>
-                                    <segue destination="Ond-rj-gng" kind="show" identifier="bienvenida" id="mZd-7r-E0j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -351,7 +415,7 @@
             </objects>
             <point key="canvasLocation" x="718.84057971014499" y="735.9375"/>
         </scene>
-        <!--Item-->
+        <!--Perfil-->
         <scene sceneID="UjA-wh-wHO">
             <objects>
                 <viewController id="xEe-zy-bRF" customClass="PerfilViewController" customModule="UeeraniApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -438,11 +502,43 @@
                                     <action selector="saveInfo:" destination="xEe-zy-bRF" eventType="touchUpInside" id="gxr-8k-ACQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AKi-zM-xhx">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEh-Ro-6sx">
+                                        <rect key="frame" x="43" y="28" width="68" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Inicio" image="face.smiling.fill" catalog="system"/>
+                                        <connections>
+                                            <segue destination="Xg9-tS-9df" kind="unwind" unwindAction="fromInicioViewWithSegue:" id="Nzd-aP-NZU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE6-DF-Bpq">
+                                        <rect key="frame" x="168" y="28" width="95" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Pueblos" image="list.bullet" catalog="system"/>
+                                        <connections>
+                                            <segue destination="Xg9-tS-9df" kind="unwind" unwindAction="fromListPueblosViewWithSegue:" id="piL-ja-Rgo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcM-Fu-XUP">
+                                        <rect key="frame" x="306" y="28" width="65" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Perfil" image="person.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.055150072830000001" green="0.6448881662" blue="0.59709700740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FIf-99-lkl"/>
                         <color key="backgroundColor" red="1" green="0.67796674260000001" blue="0.27182292829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="BlE-ac-0Ql"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" selectedImage="person.circle.fill" catalog="system" id="BlE-ac-0Ql"/>
+                    <navigationItem key="navigationItem" id="Bwh-gb-j8A"/>
                     <connections>
                         <outlet property="apellidos" destination="LXp-xh-5aN" id="9DP-Vj-0tt"/>
                         <outlet property="contraseña" destination="NFi-78-82F" id="e4p-fy-pY7"/>
@@ -452,10 +548,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2P-Wl-gKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Xg9-tS-9df" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1457.9710144927537" y="735.9375"/>
         </scene>
-        <!--Item 1-->
+        <!--Historia-->
         <scene sceneID="LDY-u7-FaG">
             <objects>
                 <viewController id="sqz-ZT-Yvc" customClass="InfoPuebloViewController" customModule="UeeraniApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -529,7 +626,7 @@
                         <viewLayoutGuide key="safeArea" id="TgL-Dp-x0p"/>
                         <color key="backgroundColor" red="1" green="0.67796674260000001" blue="0.27182292829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="a1J-CQ-fqY"/>
+                    <tabBarItem key="tabBarItem" title="Historia" selectedImage="info.circle" catalog="system" id="a1J-CQ-fqY"/>
                     <connections>
                         <outlet property="imageClima" destination="kI4-Cv-fxR" id="Z57-gY-DqX"/>
                         <outlet property="infoPueblo" destination="bVH-Mb-g2Q" id="0Pg-2e-nhJ"/>
@@ -543,7 +640,7 @@
             </objects>
             <point key="canvasLocation" x="3105.7971014492755" y="735.9375"/>
         </scene>
-        <!--Item-->
+        <!--Galeria-->
         <scene sceneID="weD-8X-w6X">
             <objects>
                 <viewController id="dlV-bR-bZ6" customClass="GaleriaViewController" customModule="UeeraniApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -566,7 +663,7 @@
                         <viewLayoutGuide key="safeArea" id="1oK-lG-6B4"/>
                         <color key="backgroundColor" red="1" green="0.67796674260000001" blue="0.27182292829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ogZ-KA-Vxc"/>
+                    <tabBarItem key="tabBarItem" title="Galeria" selectedImage="camera" id="ogZ-KA-Vxc"/>
                     <connections>
                         <outlet property="galeria" destination="sfh-rb-enk" id="bNd-Ld-zBZ"/>
                     </connections>
@@ -578,7 +675,7 @@
         <!--Navigation Controller-->
         <scene sceneID="D13-gq-IEy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iCf-i8-IjX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="iCf-i8-IjX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lxu-rg-LzO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -593,27 +690,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiL-LQ-2fY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53.623188405797109" y="60.9375"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="PdB-Qa-RDu">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ond-rj-gng" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="nA7-Ca-7Z2"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kvf-mv-D6E">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="4K4-Ot-g77" kind="relationship" relationship="viewControllers" id="2bo-RE-ym5"/>
-                        <segue destination="xEe-zy-bRF" kind="relationship" relationship="viewControllers" id="lji-ZM-6bH"/>
-                        <segue destination="0WW-Y6-RJn" kind="relationship" relationship="viewControllers" id="7hT-TL-za0"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="erO-QK-1LC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1616" y="61"/>
         </scene>
         <!--Item-->
         <scene sceneID="WiQ-ih-BBH">
@@ -638,12 +714,20 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mZd-7r-E0j"/>
+        <segue reference="eBY-v3-gbo"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="camera" width="32" height="32"/>
+        <image name="face.smiling.fill" catalog="system" width="128" height="121"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="list.star" catalog="system" width="128" height="94"/>
         <image name="person-traveling" width="320" height="480"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="pueblos" width="332.5" height="249.5"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

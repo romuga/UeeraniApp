@@ -25,4 +25,7 @@ class PerfilViewController: UIViewController {
     
     @IBAction func saveInfo(_ sender: UIButton) {
     }
+    @IBAction func fromPerfilView(segue:UIStoryboardSegue!){
+        
+    }
 }

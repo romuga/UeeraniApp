@@ -23,7 +23,7 @@ class ViewController: UIViewController {
                 (result, error) in
                 
                 if let result = result, error == nil{
-                    //self.navigationController?.pushViewController(InicioViewController(email: result.user.email!, provider: .basic), animated: true)
+                    //self.navigationController?.pushViewController(BienvenidaViewController(email: result.user.email!, provider: .basic), animated: true)
                     self.performSegue(withIdentifier: "bienvenida", sender: BienvenidaViewController.self)
                 }else{
                     let alert = UIAlertController(title: "Error", message: "Usuario y/o contraseña incorrectos", preferredStyle: .alert)
@@ -35,14 +35,5 @@ class ViewController: UIViewController {
     }
     }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "bienvenida"{
-                let user = usuario.text!
-                let usuario = segue.destination as! BienvenidaViewController
-                usuario.nUsuario = user
-                //usuario.pass = contraText.text!
-               
-            }
-        }
 }
 
