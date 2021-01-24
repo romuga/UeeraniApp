@@ -13,4 +13,5 @@ pod 'GIFImageView'
 pod 'SwiftyGif'
 pod 'Firebase'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
 end

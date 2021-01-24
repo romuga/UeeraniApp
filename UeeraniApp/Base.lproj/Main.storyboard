@@ -72,8 +72,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsu-Zl-FF0"/>
-                                    <segue destination="4K4-Ot-g77" kind="show" identifier="bienvenida" id="Cs4-Tj-ZnS"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgD-Hr-sIO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -166,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhW-Jn-qng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818.840579710145" y="60.9375"/>
+            <point key="canvasLocation" x="1574" y="61"/>
         </scene>
         <!--Pueblos-->
         <scene sceneID="qqd-38-Iht">
@@ -325,7 +324,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRB-ab-nuT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="VkW-9u-Vix" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2659" y="61"/>
+            <point key="canvasLocation" x="2309" y="61"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="fer-EH-CGM">
@@ -397,6 +396,7 @@
                                 </state>
                                 <connections>
                                     <action selector="register:" destination="K2q-iJ-zP7" eventType="touchUpInside" id="WAj-Je-ig3"/>
+                                    <segue destination="4K4-Ot-g77" kind="show" identifier="bienvenida" id="pv9-kS-gdI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -710,11 +710,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxf-5i-ZgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2309" y="736"/>
+            <point key="canvasLocation" x="2309" y="777"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eBY-v3-gbo"/>
+        <segue reference="sIb-4O-GgF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera" width="32" height="32"/>
