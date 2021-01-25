@@ -10,6 +10,9 @@
 		4C4BE82943F224C458C9F347 /* Pods_UeeraniApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF98A9393A6DF61653C71BCA /* Pods_UeeraniApp.framework */; };
 		91063CA025BBE73A008D2E8C /* ListPueblosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91063C9F25BBE73A008D2E8C /* ListPueblosViewController.swift */; };
 		9133E13225B697BA00B88E14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9133E13125B697BA00B88E14 /* GoogleService-Info.plist */; };
+		9197342B25BE42D90008FC8D /* ClimaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197342825BE42D80008FC8D /* ClimaManager.swift */; };
+		9197342C25BE42D90008FC8D /* ClimaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197342925BE42D80008FC8D /* ClimaModelo.swift */; };
+		9197342D25BE42D90008FC8D /* ClimaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197342A25BE42D80008FC8D /* ClimaData.swift */; };
 		91A492A725B3D9E70034FBF0 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A492A625B3D9E70034FBF0 /* PerfilViewController.swift */; };
 		91A492AA25B3DBDB0034FBF0 /* InfoPuebloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A492A925B3DBDB0034FBF0 /* InfoPuebloViewController.swift */; };
 		91A492AD25B3DBF60034FBF0 /* GaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A492AC25B3DBF60034FBF0 /* GaleriaViewController.swift */; };
@@ -29,6 +32,9 @@
 		8B5D7FD4A5CE64BA8719D8CD /* Pods-UeeraniApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UeeraniApp.debug.xcconfig"; path = "Target Support Files/Pods-UeeraniApp/Pods-UeeraniApp.debug.xcconfig"; sourceTree = "<group>"; };
 		91063C9F25BBE73A008D2E8C /* ListPueblosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPueblosViewController.swift; sourceTree = "<group>"; };
 		9133E13125B697BA00B88E14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9197342825BE42D80008FC8D /* ClimaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClimaManager.swift; path = ../../Clima/Clima/ClimaManager.swift; sourceTree = "<group>"; };
+		9197342925BE42D80008FC8D /* ClimaModelo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClimaModelo.swift; path = ../../Clima/Clima/ClimaModelo.swift; sourceTree = "<group>"; };
+		9197342A25BE42D80008FC8D /* ClimaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClimaData.swift; path = ../../Clima/Clima/ClimaData.swift; sourceTree = "<group>"; };
 		91A492A625B3D9E70034FBF0 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		91A492A925B3DBDB0034FBF0 /* InfoPuebloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPuebloViewController.swift; sourceTree = "<group>"; };
 		91A492AC25B3DBF60034FBF0 /* GaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 				91A492AF25B3DE250034FBF0 /* BienvenidaViewController.swift */,
 				9133E13125B697BA00B88E14 /* GoogleService-Info.plist */,
 				91063C9F25BBE73A008D2E8C /* ListPueblosViewController.swift */,
+				9197342A25BE42D80008FC8D /* ClimaData.swift */,
+				9197342825BE42D80008FC8D /* ClimaManager.swift */,
+				9197342925BE42D80008FC8D /* ClimaModelo.swift */,
 			);
 			path = UeeraniApp;
 			sourceTree = "<group>";
@@ -234,8 +243,11 @@
 				91A492B025B3DE250034FBF0 /* BienvenidaViewController.swift in Sources */,
 				91A81F8B25AEA1EC00FC6217 /* ViewController.swift in Sources */,
 				91A492AD25B3DBF60034FBF0 /* GaleriaViewController.swift in Sources */,
+				9197342D25BE42D90008FC8D /* ClimaData.swift in Sources */,
 				91A81F9125AEA1EC00FC6217 /* UeeraniApp.xcdatamodeld in Sources */,
 				91063CA025BBE73A008D2E8C /* ListPueblosViewController.swift in Sources */,
+				9197342C25BE42D90008FC8D /* ClimaModelo.swift in Sources */,
+				9197342B25BE42D90008FC8D /* ClimaManager.swift in Sources */,
 				91A81F8725AEA1EC00FC6217 /* AppDelegate.swift in Sources */,
 				91A492AA25B3DBDB0034FBF0 /* InfoPuebloViewController.swift in Sources */,
 				91F71B9425B14B3800E4E6CF /* RegistroViewController.swift in Sources */,

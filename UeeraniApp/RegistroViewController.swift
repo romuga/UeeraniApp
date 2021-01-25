@@ -38,12 +38,23 @@ class RegistroViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: pass){
                 (result, error) in
                 
-                if let result = result, error == nil{
+                if let _ = result, error == nil{
                    // self.navigationController?.pushViewController(InicioViewController(email: result.user.email!, provider: .basic), animated: true)
                     
-                    self.ref.child("users").child(nombreDB).setValue(["apellidos": apDB, "email": correoDB])
-                    self.performSegue(withIdentifier: "bienvenida", sender: BienvenidaViewController.self)
-                
+                    Auth.auth().signIn(withEmail: email, password: pass){
+                        (result, error) in
+                        
+                        if let _ = result, error == nil{
+                            let userID = Auth.auth().currentUser?.uid
+                            self.ref.child("users").child(userID!).setValue(["nombre": nombreDB,"apellidos": apDB, "email": correoDB])
+                            self.performSegue(withIdentifier: "bienvenida", sender: BienvenidaViewController.self)
+                        }else{
+                            let alert = UIAlertController(title: "Error", message: "No se pudo iniciar sesion", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                            
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
                 }else{
                     let alert = UIAlertController(title: "Error", message: "Error al registrar al usuario", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Aceptar", style: .default))

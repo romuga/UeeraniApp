@@ -16,6 +16,7 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var contraseña: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated:true)
 
     }
     

@@ -72,7 +72,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgD-Hr-sIO"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7A-WG-YT6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,6 +83,7 @@
                     <connections>
                         <outlet property="contraseña" destination="Wxd-IA-cWx" id="hv7-qP-jq5"/>
                         <outlet property="usuario" destination="wHp-ym-PCt" id="GLH-aP-bab"/>
+                        <segue destination="4K4-Ot-g77" kind="show" identifier="bienvenida" id="uIt-oR-YyE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,12 +159,20 @@
                         <color key="backgroundColor" red="1" green="0.70499079799999997" blue="0.3281545166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bienvenido" selectedImage="star.fill" catalog="system" id="2Mx-LA-2Y2"/>
-                    <navigationItem key="navigationItem" id="p0y-Kl-X10"/>
+                    <navigationItem key="navigationItem" id="p0y-Kl-X10">
+                        <barButtonItem key="rightBarButtonItem" title="SALIR" id="j5Y-KY-8lG">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <segue destination="Vpu-7U-r2t" kind="unwind" unwindAction="fromLoginViewWithSegue:" id="6XG-u4-88b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="nombreUserLabel" destination="1cN-8d-D6X" id="HQ0-mx-ZZz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhW-Jn-qng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Vpu-7U-r2t" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1574" y="61"/>
         </scene>
@@ -175,19 +184,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRn-ps-5HV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Angangueo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRn-ps-5HV">
                                 <rect key="frame" x="119" y="146" width="275" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Angangueo"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
                                 <state key="normal" title="Angangueo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="54u-PV-LZ0" kind="show" identifier="pueblo" id="PXI-hH-hx4"/>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Angangueo" id="ohc-tb-kYG"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6MU-gX-sG2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angangueo" translatesAutoresizingMaskIntoConstraints="NO" id="6MU-gX-sG2">
                                 <rect key="frame" x="20" y="146" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -199,8 +209,11 @@
                                 <state key="normal" title="Cuitzeo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Cuitzeo" id="DM7-VH-jNL"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-G3-OZ8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cuitzeo" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-G3-OZ8">
                                 <rect key="frame" x="20" y="223" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -212,8 +225,11 @@
                                 <state key="normal" title="Pátzcuaro">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Patzcuaro" id="OsC-OC-F1p"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8pL-lm-h5P">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="patzcuaro" translatesAutoresizingMaskIntoConstraints="NO" id="8pL-lm-h5P">
                                 <rect key="frame" x="20" y="300" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -225,8 +241,11 @@
                                 <state key="normal" title="Santa Clara de Cobre">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Santa Clara del Cobre" id="fi0-FY-CQj"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7F6-IQ-rM4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="santaclara" translatesAutoresizingMaskIntoConstraints="NO" id="7F6-IQ-rM4">
                                 <rect key="frame" x="20" y="377" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -238,8 +257,11 @@
                                 <state key="normal" title="Tacámbaro">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Tacambaro" id="4S0-68-ytj"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umd-Mi-x34">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tacambaor" translatesAutoresizingMaskIntoConstraints="NO" id="umd-Mi-x34">
                                 <rect key="frame" x="20" y="454" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -251,8 +273,11 @@
                                 <state key="normal" title="Jiquilpan">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Jiquilpan" id="siU-zi-x7i"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kob-xH-0CS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jiquilpan" translatesAutoresizingMaskIntoConstraints="NO" id="Kob-xH-0CS">
                                 <rect key="frame" x="20" y="531" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -264,8 +289,11 @@
                                 <state key="normal" title="Tlalpujahua">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Tlalpujahua" id="LNt-tP-Obg"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zi-S2-MJF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tlalpujahua" translatesAutoresizingMaskIntoConstraints="NO" id="1zi-S2-MJF">
                                 <rect key="frame" x="20" y="608" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -277,8 +305,11 @@
                                 <state key="normal" title="Tzintzuntzan">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sqz-ZT-Yvc" kind="show" identifier="Tzintzuntzan" id="ZnM-br-NWz"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-9j-AgU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tzintzuntzan" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-9j-AgU">
                                 <rect key="frame" x="20" y="685" width="91" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -301,6 +332,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Pueblos" image="list.bullet" catalog="system"/>
+                                        <connections>
+                                            <segue destination="sqz-ZT-Yvc" kind="show" id="G9M-2A-QZ9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVp-5v-fgc">
                                         <rect key="frame" x="306" y="28" width="65" height="26"/>
@@ -319,7 +353,14 @@
                         <color key="backgroundColor" red="1" green="0.70499079799999997" blue="0.3281545166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pueblos" selectedImage="list.star" catalog="system" id="UDG-0o-qsj"/>
-                    <navigationItem key="navigationItem" id="Tak-q5-SJc"/>
+                    <navigationItem key="navigationItem" id="Tak-q5-SJc">
+                        <barButtonItem key="rightBarButtonItem" title="SALIR" id="AmO-Kb-yLh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="VkW-9u-Vix" kind="unwind" unwindAction="fromLoginViewWithSegue:" id="RkF-ih-WpG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRB-ab-nuT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="VkW-9u-Vix" userLabel="Exit" sceneMemberID="exit"/>
@@ -396,7 +437,6 @@
                                 </state>
                                 <connections>
                                     <action selector="register:" destination="K2q-iJ-zP7" eventType="touchUpInside" id="WAj-Je-ig3"/>
-                                    <segue destination="4K4-Ot-g77" kind="show" identifier="bienvenida" id="pv9-kS-gdI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -409,11 +449,12 @@
                         <outlet property="contraseña" destination="jRb-3S-cy5" id="UPL-zA-FI7"/>
                         <outlet property="email" destination="wm0-0F-I9U" id="TcD-6b-nDD"/>
                         <outlet property="nombre" destination="zLz-eR-Yjv" id="JAr-5u-mHG"/>
+                        <segue destination="4K4-Ot-g77" kind="show" identifier="bienvenida" id="LB1-Vr-RRt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYc-vd-VaZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718.84057971014499" y="735.9375"/>
+            <point key="canvasLocation" x="719" y="777"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="UjA-wh-wHO">
@@ -538,7 +579,14 @@
                         <color key="backgroundColor" red="1" green="0.67796674260000001" blue="0.27182292829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" selectedImage="person.circle.fill" catalog="system" id="BlE-ac-0Ql"/>
-                    <navigationItem key="navigationItem" id="Bwh-gb-j8A"/>
+                    <navigationItem key="navigationItem" id="Bwh-gb-j8A">
+                        <barButtonItem key="rightBarButtonItem" title="SALIR" id="23q-yC-696">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Xg9-tS-9df" kind="unwind" unwindAction="fromLoginViewWithSegue:" id="3a2-ZE-hqo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="apellidos" destination="LXp-xh-5aN" id="9DP-Vj-0tt"/>
                         <outlet property="contraseña" destination="NFi-78-82F" id="e4p-fy-pY7"/>
@@ -550,7 +598,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2P-Wl-gKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Xg9-tS-9df" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1457.9710144927537" y="735.9375"/>
+            <point key="canvasLocation" x="1470" y="766"/>
         </scene>
         <!--Historia-->
         <scene sceneID="LDY-u7-FaG">
@@ -560,14 +608,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEu-1x-GVn">
-                                <rect key="frame" x="168" y="114" width="78" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEu-1x-GVn">
+                                <rect key="frame" x="20" y="114" width="352" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kI4-Cv-fxR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="llovizna" translatesAutoresizingMaskIntoConstraints="NO" id="kI4-Cv-fxR">
                                 <rect key="frame" x="20" y="197" width="133" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -606,15 +654,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bVH-Mb-g2Q">
-                                <rect key="frame" x="20" y="433" width="352" height="368"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lleva sombrilla" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHV-CK-565">
                                 <rect key="frame" x="20" y="314" width="352" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -622,11 +661,48 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oc-Ua-IXu">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK2-rU-xUi">
+                                        <rect key="frame" x="43" y="28" width="68" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Inicio" image="face.smiling.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ne-ix-zLL">
+                                        <rect key="frame" x="168" y="28" width="95" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Pueblos" image="list.bullet" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTf-M0-d5z">
+                                        <rect key="frame" x="306" y="28" width="65" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Perfil" image="person.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.055150072830000001" green="0.6448881662" blue="0.59709700740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bVH-Mb-g2Q">
+                                <rect key="frame" x="20" y="398" width="352" height="368"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TgL-Dp-x0p"/>
                         <color key="backgroundColor" red="1" green="0.67796674260000001" blue="0.27182292829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Historia" selectedImage="info.circle" catalog="system" id="a1J-CQ-fqY"/>
+                    <tabBarItem key="tabBarItem" title="Historia" selectedImage="info.circle" catalog="system" id="a1J-CQ-fqY">
+                        <color key="badgeColor" red="0.055150072830000001" green="0.6448881662" blue="0.59709700740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="BgA-Nu-mLf"/>
                     <connections>
                         <outlet property="imageClima" destination="kI4-Cv-fxR" id="Z57-gY-DqX"/>
                         <outlet property="infoPueblo" destination="bVH-Mb-g2Q" id="0Pg-2e-nhJ"/>
@@ -638,7 +714,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZH-lZ-nQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3105.7971014492755" y="735.9375"/>
+            <point key="canvasLocation" x="2253.6231884057975" y="764.73214285714278"/>
         </scene>
         <!--Galeria-->
         <scene sceneID="weD-8X-w6X">
@@ -659,6 +735,31 @@
                                 <rect key="frame" x="33" y="227" width="349" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-bM-3vA">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaV-UF-kJb">
+                                        <rect key="frame" x="43" y="28" width="68" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Inicio" image="face.smiling.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1w-OQ-S4B">
+                                        <rect key="frame" x="168" y="28" width="95" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Pueblos" image="list.bullet" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulm-If-4rI">
+                                        <rect key="frame" x="306" y="28" width="65" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Perfil" image="person.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.055150072830000001" green="0.6448881662" blue="0.59709700740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1oK-lG-6B4"/>
                         <color key="backgroundColor" red="1" green="0.67796674260000001" blue="0.27182292829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -670,7 +771,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Sr-gT-nTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3889.8550724637685" y="735.9375"/>
+            <point key="canvasLocation" x="3088" y="765"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D13-gq-IEy">
@@ -691,43 +792,33 @@
             </objects>
             <point key="canvasLocation" x="53.623188405797109" y="60.9375"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="WiQ-ih-BBH">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="54u-PV-LZ0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="15Z-Yc-vUl"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Q3t-vI-kfh"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fXI-Wj-Yz3">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="sqz-ZT-Yvc" kind="relationship" relationship="viewControllers" id="cIA-lE-G5D"/>
-                        <segue destination="dlV-bR-bZ6" kind="relationship" relationship="viewControllers" id="6Cy-21-ep9"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hxf-5i-ZgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2309" y="777"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sIb-4O-GgF"/>
+        <segue reference="ZnM-br-NWz"/>
+        <segue reference="eBY-v3-gbo"/>
+        <segue reference="LB1-Vr-RRt"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="angangueo" width="350" height="225"/>
         <image name="camera" width="32" height="32"/>
+        <image name="cuitzeo" width="137.5" height="91.5"/>
         <image name="face.smiling.fill" catalog="system" width="128" height="121"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="jiquilpan" width="283.5" height="212.5"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="list.star" catalog="system" width="128" height="94"/>
+        <image name="llovizna" width="32" height="32"/>
+        <image name="patzcuaro" width="256" height="256"/>
         <image name="person-traveling" width="320" height="480"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="pueblos" width="332.5" height="249.5"/>
+        <image name="santaclara" width="319" height="211"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="tacambaor" width="390.5" height="209.5"/>
+        <image name="tlalpujahua" width="400" height="262"/>
+        <image name="tzintzuntzan" width="750" height="445.5"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BienvenidaViewController: UIViewController {
 
@@ -13,13 +14,14 @@ class BienvenidaViewController: UIViewController {
     var nUsuario : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        nUsuario = "MArio"
+        //nombreUserLabel.text = nUsuario!
+        self.navigationItem.setHidesBackButton(true, animated:true)
 
     }
     
     @IBAction func fromInicioView(segue:UIStoryboardSegue!){
-        
+       
     }
 
-
+    
 }
