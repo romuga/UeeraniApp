@@ -48,25 +48,7 @@ class ViewController: UIViewController {
        }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "bienvenida"{
-            
-           let usuario = segue.destination as! BienvenidaViewController
-           /* let userID = Auth.auth().currentUser?.uid
-            self.ref.child("users").child(userID!)
-            ref.child("users").child(userID!).child("nombre").observe(.value, with: {
-                    snapshot in
-                    var groupNames = [String]()
-                    for group in snapshot.children {
-                        groupNames.append((group as AnyObject).key)
-                    }
-                    print(groupNames)
-                })*/
-            let nombre = ""
-            usuario.nUsuario = nombre
-            //usuario.pass = password.text!nombreDB
-        }
-    }
     
 }
+
 

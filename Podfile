@@ -14,4 +14,5 @@ pod 'SwiftyGif'
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'ImageSlideshow', '~> 1.9.0'
 end

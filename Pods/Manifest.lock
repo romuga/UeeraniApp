@@ -73,6 +73,9 @@ PODS:
   - GoogleUtilities/UserDefaults (7.1.1):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.5.0)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
   - leveldb-library (1.22)
   - nanopb (2.30906.0):
     - nanopb/decode (= 2.30906.0)
@@ -88,6 +91,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - GIFImageView
+  - ImageSlideshow (~> 1.9.0)
   - SwiftyGif
 
 SPEC REPOS:
@@ -105,6 +109,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - GTMSessionFetcher
+    - ImageSlideshow
     - leveldb-library
     - nanopb
     - PromisesObjC
@@ -124,11 +129,12 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 116c84c4bdeb76be2a7a46de51244368f9794eab
   GoogleUtilities: 3dc4ff0d5e4840e2fa8eef0889620e8c33d4218c
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
 
-PODFILE CHECKSUM: 9eccbf8de4a37e7ad9a7f4c35181f60da59baf19
+PODFILE CHECKSUM: 64106aba3cae7626c96d08e5f086f1ffe17b6f90
 
 COCOAPODS: 1.10.0
