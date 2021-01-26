@@ -99,6 +99,13 @@ class InfoPuebloViewController: UIViewController, ClimaManagerDelegate {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pueblo"{
+            let pueblo = segue.destination as! GaleriaViewController
+            pueblo.pueblo = self.pueblo?.lowercased()
+           
+        }
+    }
 
 
 }
