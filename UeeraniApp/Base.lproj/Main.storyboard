@@ -489,7 +489,7 @@
                                 <rect key="frame" x="72" y="502" width="271" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOZ-XY-zPi">
                                 <rect key="frame" x="72" y="473" width="88" height="21"/>
@@ -1043,7 +1043,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="ZnM-br-NWz"/>
         <segue reference="eBY-v3-gbo"/>
-        <segue reference="uIt-oR-YyE"/>
+        <segue reference="LB1-Vr-RRt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="angangueo" width="350" height="225"/>
