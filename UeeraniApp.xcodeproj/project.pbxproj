@@ -25,6 +25,8 @@
 		91A81F9325AEA1EF00FC6217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A81F9225AEA1EF00FC6217 /* Assets.xcassets */; };
 		91A81F9625AEA1EF00FC6217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A81F9425AEA1EF00FC6217 /* LaunchScreen.storyboard */; };
 		91F71B9425B14B3800E4E6CF /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F71B9325B14B3700E4E6CF /* RegistroViewController.swift */; };
+		91FD356925BFEE0E00B34F2D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD356825BFEE0E00B34F2D /* MapsViewController.swift */; };
+		91FD356C25BFF26500B34F2D /* Pueblo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD356B25BFF26500B34F2D /* Pueblo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		91A81F9525AEA1EF00FC6217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91A81F9725AEA1EF00FC6217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91F71B9325B14B3700E4E6CF /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		91FD356825BFEE0E00B34F2D /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		91FD356B25BFF26500B34F2D /* Pueblo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pueblo.swift; sourceTree = "<group>"; };
 		AF98A9393A6DF61653C71BCA /* Pods_UeeraniApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UeeraniApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,8 @@
 				9197342A25BE42D80008FC8D /* ClimaData.swift */,
 				9197342825BE42D80008FC8D /* ClimaManager.swift */,
 				9197342925BE42D80008FC8D /* ClimaModelo.swift */,
+				91FD356825BFEE0E00B34F2D /* MapsViewController.swift */,
+				91FD356B25BFF26500B34F2D /* Pueblo.swift */,
 			);
 			path = UeeraniApp;
 			sourceTree = "<group>";
@@ -248,7 +254,9 @@
 				91063CA025BBE73A008D2E8C /* ListPueblosViewController.swift in Sources */,
 				9197342C25BE42D90008FC8D /* ClimaModelo.swift in Sources */,
 				9197342B25BE42D90008FC8D /* ClimaManager.swift in Sources */,
+				91FD356925BFEE0E00B34F2D /* MapsViewController.swift in Sources */,
 				91A81F8725AEA1EC00FC6217 /* AppDelegate.swift in Sources */,
+				91FD356C25BFF26500B34F2D /* Pueblo.swift in Sources */,
 				91A492AA25B3DBDB0034FBF0 /* InfoPuebloViewController.swift in Sources */,
 				91F71B9425B14B3800E4E6CF /* RegistroViewController.swift in Sources */,
 				91A81F8925AEA1EC00FC6217 /* SceneDelegate.swift in Sources */,

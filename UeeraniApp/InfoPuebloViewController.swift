@@ -98,6 +98,9 @@ class InfoPuebloViewController: UIViewController, ClimaManagerDelegate {
         }
         
     }
+    @IBAction func fromInfoPuebloView(segue:UIStoryboardSegue!){
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "pueblo"{
