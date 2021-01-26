@@ -42,6 +42,8 @@ class ViewController: UIViewController {
         let firebaseAuth = Auth.auth()
        do {
          try firebaseAuth.signOut()
+        self.usuario.text = ""
+        self.contraseña.text = ""
         print("SALISTE")
        } catch let signOutError as NSError {
          print ("Error signing out: %@", signOutError)

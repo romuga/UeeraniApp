@@ -57,6 +57,8 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
         print(error.localizedDescription)
     }
     
-
+    @IBAction func fromMapsView(segue:UIStoryboardSegue!){
+        
+    }
 
 }

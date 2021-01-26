@@ -26,7 +26,7 @@
                                 <rect key="frame" x="80" y="654" width="254" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pueblos" translatesAutoresizingMaskIntoConstraints="NO" id="Eoh-8f-NFZ">
                                 <rect key="frame" x="-6" y="160" width="427" height="337"/>
@@ -489,7 +489,7 @@
                                 <rect key="frame" x="72" y="502" width="271" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOZ-XY-zPi">
                                 <rect key="frame" x="72" y="473" width="88" height="21"/>
@@ -776,6 +776,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" image="ubicacion"/>
+                                        <connections>
+                                            <segue destination="ZWy-JQ-Sld" kind="unwind" unwindAction="fromMapsViewWithSegue:" id="GDG-3V-RsS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ne-ix-zLL">
                                         <rect key="frame" x="191" y="9" width="32" height="32"/>
@@ -833,7 +836,7 @@
                         <barButtonItem key="rightBarButtonItem" title="SALIR" id="l1t-BE-C6o">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="ZWy-JQ-Sld" kind="unwind" unwindAction="fromLoginViewWithSegue:" id="DYf-mR-sqS"/>
+                                <segue destination="ZWy-JQ-Sld" kind="unwind" unwindAction="fromLoginViewWithSegue:" id="Nx3-Ts-ufg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -874,7 +877,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" image="info"/>
                                         <connections>
-                                            <segue destination="hXl-3Q-V3X" kind="unwind" unwindAction="fromInfoPuebloViewWithSegue:" id="u4L-Vq-KyN"/>
+                                            <segue destination="hXl-3Q-V3X" kind="unwind" unwindAction="fromInfoPuebloViewWithSegue:" id="94i-xI-n0g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI1-rW-UCp">
@@ -938,6 +941,9 @@
                     <navigationItem key="navigationItem" id="4gG-vy-ta0">
                         <barButtonItem key="rightBarButtonItem" title="SALIR" id="hjl-Ff-kSg">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="hXl-3Q-V3X" kind="unwind" unwindAction="fromLoginViewWithSegue:" id="mJx-ny-CPf"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -966,6 +972,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" image="info"/>
+                                        <connections>
+                                            <segue destination="AG5-9R-AzU" kind="unwind" unwindAction="fromInfoPuebloViewWithSegue:" id="aEo-dE-6cX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-g2-JbV">
                                         <rect key="frame" x="323" y="9" width="32" height="32"/>
@@ -978,6 +987,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" image="galeria"/>
+                                        <connections>
+                                            <segue destination="AG5-9R-AzU" kind="unwind" unwindAction="fromGaleriaViewWithSegue:" id="Kgx-RW-Q3p"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAl-sM-bW3">
                                         <rect key="frame" x="62" y="42" width="29" height="21"/>
@@ -1017,6 +1029,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wz7-HF-jYP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AG5-9R-AzU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3742.0289855072465" y="764.73214285714278"/>
         </scene>
